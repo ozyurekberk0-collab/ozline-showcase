@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="Ozline — şirket içi sorun, görev ve güvenlik formu platformu">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071226"/>
+      <stop offset="0.55" stop-color="#0D2246"/>
+      <stop offset="1" stop-color="#0A1A36"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#14D3C0" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#14D3C0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3B6BFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3B6BFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2AF0D8"/>
+      <stop offset="1" stop-color="#0FB5A5"/>
+    </linearGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#C9D6EE"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#FFFFFF" fill-opacity="0.07"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1280" height="420" rx="22"/></clipPath>
+    <style>
+      .t { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin: 1135px 104px; }
+      @keyframes pulse { 0%,100% { opacity: .35; transform: scale(1); } 50% { opacity: 0; transform: scale(2.2); } }
+      .spin { animation: spin 18s linear infinite; transform-origin: 190px 210px; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="420" fill="url(#bg)"/>
+    <rect width="1280" height="420" fill="url(#dots)"/>
+    <circle cx="190" cy="210" r="210" fill="url(#glow)"/>
+    <circle cx="1080" cy="380" r="300" fill="url(#glow2)"/>
+
+    <!-- Logo işareti -->
+    <g class="spin">
+      <circle cx="190" cy="210" r="104" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1.5" stroke-dasharray="3 9"/>
+    </g>
+    <g stroke-linecap="round" fill="none" stroke-width="26">
+      <path d="M121.1 197.8 A70 70 0 0 1 257.6 191.9" stroke="#FFFFFF"/>
+      <path d="M259.7 216.1 A70 70 0 0 1 121.1 222.2" stroke="url(#teal)"/>
+    </g>
+    <circle cx="120" cy="210" r="19" fill="#FFFFFF" stroke="#0A1B3A" stroke-width="7"/>
+    <circle cx="259.7" cy="203.9" r="19" fill="url(#teal)" stroke="#0A1B3A" stroke-width="7"/>
+
+    <!-- Yazı -->
+    <text x="312" y="238" class="t" font-size="118" font-weight="800" letter-spacing="-4" fill="url(#word)">ozline</text>
+    <text x="318" y="290" class="t" font-size="25" font-weight="500" fill="#AFC0DD">Sorun bildir. Görev ata. Kaynağıyla yanıtla.</text>
+
+    <!-- Etiketler -->
+    <g class="t" font-size="15" font-weight="600">
+      <rect x="318" y="318" width="104" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.18"/>
+      <text x="370" y="339" text-anchor="middle" fill="#E6EEFB">Next.js 16</text>
+      <rect x="432" y="318" width="92" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.18"/>
+      <text x="478" y="339" text-anchor="middle" fill="#E6EEFB">FastAPI</text>
+      <rect x="534" y="318" width="118" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.18"/>
+      <text x="593" y="339" text-anchor="middle" fill="#E6EEFB">PostgreSQL</text>
+      <rect x="662" y="318" width="112" height="32" rx="16" fill="#14D3C0" fill-opacity="0.16" stroke="#2AF0D8" stroke-opacity="0.6"/>
+      <text x="718" y="339" text-anchor="middle" fill="#7FF7E8">Yerel AI</text>
+    </g>
+
+    <!-- Pano kartı -->
+    <g transform="rotate(-4 1020 210)">
+      <rect x="840" y="74" width="380" height="270" rx="18" fill="#0E2347" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <rect x="840" y="74" width="380" height="270" rx="18" fill="#FFFFFF" fill-opacity="0.03"/>
+      <circle cx="864" cy="98" r="5" fill="#FF6B6B"/>
+      <circle cx="881" cy="98" r="5" fill="#FFC857"/>
+      <circle cx="898" cy="98" r="5" fill="#2AF0D8"/>
+      <circle cx="1135" cy="104" r="6" fill="#2AF0D8" class="pulse"/>
+      <circle cx="1135" cy="104" r="4.5" fill="#2AF0D8"/>
+      <text x="1146" y="109" class="t" font-size="13" font-weight="600" fill="#7FF7E8">Canlı</text>
+
+      <g class="t" font-size="12.5" font-weight="700" fill="#8EA3C7" letter-spacing="0.5">
+        <text x="862" y="140">AÇIK</text>
+        <text x="984" y="140">DEVAM</text>
+        <text x="1106" y="140">ÇÖZÜLDÜ</text>
+      </g>
+
+      <!-- Açık -->
+      <rect x="860" y="152" width="108" height="58" rx="9" fill="#FFFFFF" fill-opacity="0.07"/>
+      <rect x="870" y="164" width="72" height="7" rx="3.5" fill="#E6EEFB" fill-opacity="0.8"/>
+      <rect x="870" y="178" width="50" height="6" rx="3" fill="#8EA3C7" fill-opacity="0.6"/>
+      <rect x="870" y="192" width="34" height="11" rx="5.5" fill="#FF6B6B" fill-opacity="0.85"/>
+      <rect x="860" y="218" width="108" height="58" rx="9" fill="#FFFFFF" fill-opacity="0.07"/>
+      <rect x="870" y="230" width="80" height="7" rx="3.5" fill="#E6EEFB" fill-opacity="0.8"/>
+      <rect x="870" y="244" width="44" height="6" rx="3" fill="#8EA3C7" fill-opacity="0.6"/>
+      <rect x="870" y="258" width="44" height="11" rx="5.5" fill="#FFC857" fill-opacity="0.85"/>
+
+      <!-- Devam -->
+      <rect x="982" y="152" width="108" height="58" rx="9" fill="#FFFFFF" fill-opacity="0.07" stroke="#2AF0D8" stroke-opacity="0.7"/>
+      <rect x="992" y="164" width="66" height="7" rx="3.5" fill="#E6EEFB" fill-opacity="0.8"/>
+      <rect x="992" y="178" width="56" height="6" rx="3" fill="#8EA3C7" fill-opacity="0.6"/>
+      <rect x="992" y="192" width="88" height="5" rx="2.5" fill="#FFFFFF" fill-opacity="0.12"/>
+      <rect x="992" y="192" width="58" height="5" rx="2.5" fill="url(#teal)"/>
+      <rect x="982" y="218" width="108" height="58" rx="9" fill="#FFFFFF" fill-opacity="0.07"/>
+      <rect x="992" y="230" width="76" height="7" rx="3.5" fill="#E6EEFB" fill-opacity="0.8"/>
+      <rect x="992" y="244" width="40" height="6" rx="3" fill="#8EA3C7" fill-opacity="0.6"/>
+      <rect x="992" y="258" width="88" height="5" rx="2.5" fill="#FFFFFF" fill-opacity="0.12"/>
+      <rect x="992" y="258" width="30" height="5" rx="2.5" fill="url(#teal)"/>
+
+      <!-- Çözüldü -->
+      <rect x="1104" y="152" width="100" height="58" rx="9" fill="#FFFFFF" fill-opacity="0.05"/>
+      <rect x="1114" y="164" width="60" height="7" rx="3.5" fill="#E6EEFB" fill-opacity="0.45"/>
+      <circle cx="1121" cy="193" r="8" fill="#2AF0D8" fill-opacity="0.2"/>
+      <path d="M1117 193 l3 3 l5 -6" fill="none" stroke="#2AF0D8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Asistan balonu -->
+      <rect x="860" y="290" width="344" height="38" rx="19" fill="#14D3C0" fill-opacity="0.12" stroke="#2AF0D8" stroke-opacity="0.45"/>
+      <text x="880" y="314" class="t" font-size="13.5" font-weight="500" fill="#C9F9F2">Asistan: Bugün 3 işin var, 1 tanesi gecikmiş.</text>
+    </g>
+  </g>
+</svg>
